@@ -1,0 +1,298 @@
+<html>
+
+<head>
+    <!-- <link rel="preload" href="https://assets.gobreeze.com/Metropolis-Regular.woff2" as="font" type="font/woff2"> -->
+
+    <style type="text/css" media="all">
+        /* @font-face {
+            font-family: 'Metropolis Regular';
+            src: url('./fonts/Metropolis-Regular.woff') format('woff2'),
+                url('./fonts/Metropolis-Regular.woff') format('woff');
+        } */
+
+        @font-face {
+            font-family: 'Metropolis Regular';
+            src: url('https://assets.gobreeze.com/Metropolis-Regular.woff2') format('woff2'),
+                url('https://assets.gobreeze.com/Metropolis-Regular.woff') format('woff');
+        }
+
+        body {
+            width: 650px;
+            margin: 0px auto;
+            text-align: center;
+            padding-bottom: 34px;
+        }
+
+        .heading {
+            display: table;
+            background-color: #5BC5D0;
+            height: 256px;
+            width: 100%;
+        }
+
+        .heading .title {
+            color: #FFFFFF;
+            font-size: 44px;
+            display: table-cell;
+            vertical-align: middle;
+            font-family: "Gotham Rounded", Arial, Helvetica, sans-serif;
+        }
+
+        .summary {
+            color: #37474F;
+        }
+
+        .summary .title {
+            margin-top: 58px;
+            font-size: 36px;
+            color: #37474F;
+            font-weight: bolder;
+            font-family: 'Metropolis Regular';
+        }
+
+        .summary .description {
+            color: #546E7A;
+            font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+            margin-top: 36px;
+            padding: 0 100px;
+            font-size: 20px;
+        }
+
+        .business-name {
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .details {
+            border: 3px solid #5BC5D0;
+            border-radius: 10px;
+            margin: 40px auto;
+            width: 556px;
+            padding: 30px 0;
+        }
+
+        .receipt-logo {
+            margin-top: -58px;
+            margin-left: 250px;
+            width: 50px;
+            height: 50px;
+            background-repeat: no-repeat;
+        }
+
+        .details .title {
+            margin-top: 20px;
+            font-size: 22px;
+            font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: #5BC5D0;
+        }
+
+        .details .content {
+            margin-top: 20px;
+        }
+
+        ul {
+            margin: 0px;
+            list-style: none;
+            padding: 0 5%;
+        }
+
+        ul.items {
+            margin-left: 20px;
+            color: #78909C;
+        }
+
+        li {
+            border-top: 1px solid #CFD8DC;
+            height: 54px;
+        }
+
+        li.total,
+        ul.items li {
+            border-bottom: 1px solid #CFD8DC;
+        }
+
+        ul.items li {
+            border-top: none;
+        }
+
+        li .name {
+            float: left;
+            margin-top: 19.5px;
+        }
+
+        li .value {
+            float: right;
+            margin-top: 19.5px;
+        }
+
+        li.last {
+            border-bottom: 1px solid #CFD8DC;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .contact-us {
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+            color: #546E7A;
+            padding: 0 100px;
+        }
+
+        .terms {
+            color: #90A4AE;
+            font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            text-align: center;
+            padding: 30px
+        }
+
+        .line {
+            box-sizing: border-box;
+            height: 2px;
+            border: 1px solid #CFD8DC;
+            margin: auto;
+        }
+
+        .powered-by {
+            font-family: "Gotham Rounded", Arial, Helvetica, sans-serif;
+            font-size: 11px;
+        }
+
+        .footer {
+            margin: auto;
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        .store-badges {
+            width: 50%;
+            display: table;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        .store-badges a {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .store-badges img {
+            height: 40px;
+            width: 135px;
+        }
+
+        .breeze-logo img {
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <div class="title">Your Practice Name</div>
+    </div>
+    <div class="summary">
+        <div class="title">
+            The quick brown fox jumps
+        </div>
+        <div class="description">
+            Hi, John Doe. Here's the full receipt of your last payment made with
+            <span class="business-name">Your Practice Name</span>
+        </div>
+    </div>
+    <div class="details">
+        <div class="receipt-logo">
+            <img src="https://example.com/email_receipt.png"></img>
+        </div>
+        <div class="title">
+            <div class="payment_date">
+                2023-06-16
+            </div>
+            <div class="payment_time">
+                12:00 PM
+            </div>
+        </div>
+        <ul class="content">
+            <li>
+                <span class="name">Receipt #</span>
+                <span class="value">123456789</span>
+            </li>
+            <li>
+                <span class="name">Practice</span>
+                <span class="value">Your Practice Name</span>
+            </li>
+            <li>
+                <span class="name">Method</span>
+                <span class="value">Credit Card</span>
+            </li>
+            <li class="total">
+                <span class="name">Total Paid</span>
+                <span class="value">$100.00</span>
+            </li>
+        </ul>
+        <ul class="items">
+
+            <li>
+                <span class="name">Service 1</span>
+                <span class="value">$50.00</span>
+            </li>
+
+            <li>
+                <span class="name">Service 2</span>
+                <span class="value">$30.00</span>
+            </li>
+
+            <li>
+                <span class="name">Service 3</span>
+                <span class="value">$20.00</span>
+            </li>
+
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+    <div class="contact-us">
+        If you have any questions don't hesitate to contact us at 123-456-7890.
+    </div>
+    <div class="store-badges">
+        <a class="apple-store-badge"
+            href="https://itunes.apple.com/us/app/breeze-a-better-healthcare-experience/id1197472721">
+            <img src="https://example.com/app_store_button.png"> </img>
+        </a>
+        <a class="play-store-badge" href="https://play.google.com/store/apps/details?id=com.carecloud.carepay.patient">
+            <img src="https://example.com/google_play_button.png"></img>
+        </a>
+    </div>
+    <div class="line"></div>
+    <div class="terms">
+        <p>
+            Please do not reply to this message. Replies to this message are routed to an unmonitored mailbox.
+            If you have any questions please contact your practice or visit <a
+                href="https://help.gobreeze.com">help.gobreeze.com</a>
+            You are receiving this message because <i>john.doe@example.com</i> is registered for the patient portal.
+        </p>
+        <p>
+            View our <a href="https://carecloud.app.box.com/v/breezeprivacy">Privacy Policy</a> and <a
+                href="https://carecloud.app.box.com/v/breezetou">Terms of Use</a>.
+        </p>
+        <p>
+            CareCloud © 2023 CareCloud Corporation. All rights reserved.
+        </p>
+    </div>
+    <div class="line"></div>
+    <div class="footer">
+        <div class="powered-by">
+            Powered by
+        </div>
+        <div class="breeze-logo">
+            <img src="https://example.com/email_logo_blue.png"></img>
+        </div>
+    </div>
+</body>
+
+</html>
